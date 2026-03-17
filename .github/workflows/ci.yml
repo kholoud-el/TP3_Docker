@@ -24,7 +24,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: lancer les tests
-      run: python -m pytest tests/ -v --cov=app
+      run: python -m pytest tests/ -v -cov=app
 
     - name: Build Docker image
       run: |
